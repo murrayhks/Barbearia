@@ -1,0 +1,209 @@
+/* Importação da fonte Ubuntu do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Estilos Gerais */
+body {
+    font-family: 'Ubuntu', sans-serif; /* Fonte Ubuntu */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue; /* Fundo mais claro e suave */
+    color: #333;
+}
+
+/* Splash Screen */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a; /* Preto escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#splash-screen img {
+    max-width: 200px;
+    animation: fadeOut 5s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+/* Menu Hambúrguer */
+header {
+    background-color: #2c3e50; /* Azul escuro para o menu */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu-icon {
+    color: #ecf0f1; /* Cinza claro para o ícone do menu */
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1; /* Cinza claro para os links */
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #048fcf; /* Dourado ao passar o mouse */
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #2c3e50; /* Azul escuro para títulos */
+}
+
+/* Agendamento */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: 500;
+    color: #2c3e50; /* Azul escuro */
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+form button {
+    background-color: #048fcf; /* Dourado */
+    color: #2c3e50; /* Azul escuro */
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #048fcf; /* Dourado mais escuro */
+}
+
+/* Galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Barbeiros */
+.barbeiros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.barbeiro {
+    flex: 1 1 200px;
+    text-align: center;
+    background-color: #ffffff; /* Branco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.barbeiro img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.barbeiro p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Histórico */
+#historico ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#historico ul li {
+    background-color: #ffffff; /* Branco */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        background-color: #2c3e50; /* Azul escuro para o menu mobile */
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    .barbeiro {
+        flex: 1 1 100%;
+    }
+}

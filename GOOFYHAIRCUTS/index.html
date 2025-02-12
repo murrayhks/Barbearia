@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goofyhead Cuts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <img src="images/logo.jpg" alt="Logo Goofyhead Cuts" height="350" width="800">
+    </div>
+
+    <!-- Menu Hambúrguer -->
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#agendamento">Agendamento</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#barbas">Barbas</a></li>
+                <li><a href="#barbeiros">Barbeiros</a></li>
+                <li><a href="#historico">Histórico</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section id="home">
+            <h1>Bem-vindo ao Goofyhead Cuts !!!</h1>
+            <p>A melhor barbearia do mundo !!! (ou quase)</p>
+        </section>
+
+        <section id="agendamento">
+            <h2>Agendamento</h2>
+            <form>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+                <label for="servico">Serviço:</label>
+                <select id="servico" name="servico">
+                    <option value="corte">Corte de Cabelo</option>
+                    <option value="barba">Barba</option>
+                    <option value="completo">Corte + Barba</option>
+                </select>
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+        <section id="galeria">
+            <h1>Galeria</h1>
+
+            <br>
+
+            <h2>Cabelo</h2>
+            <div class="gallery">
+                <img src="images/foto1.jpg" alt="Foto 1" height="250" width="250">
+                <img src="images/foto2.jpg" alt="Foto 2" height="250" width="250">
+                <img src="images/foto3.jpg" alt="Foto 3" height="250" width="250">
+                <img src="images/foto4.jpg" alt="Foto 4" height="250" width="250">
+                <img src="images/foto5.jpg" alt="Foto 5" height="250" width="250">
+                <img src="images/foto6.jpg" alt="Foto 6" height="250" width="250">
+            </div>
+        </section>
+
+        <br>
+
+        <section id="barbas">
+            <h1>Barbas</h1>
+            <div class="gallery">
+                <img src="images/barba1.jpg" alt="Barba 1" height="250" width="250">
+                <img src="images/barba2.jpg" alt="Barba 2" height="250" width="250">
+                <img src="images/barba3.jpg" alt="Barba 3" height="250" width="250">
+                <img src="images/barba4.jpg" alt="Barba 4" height="250" width="250">
+                <img src="images/barba5.jpg" alt="Barba 5" height="250" width="250">
+                <img src="images/barba6.jpg" alt="Barba 6" height="250" width="250">
+            </div>
+            <p>Confira nossos trabalhos em barbas. De estilos clássicos aos mais modernos, temos o visual perfeito para você!</p>
+        </section>
+
+<br>x
+
+        <section id="barbeiros">
+            <h2>Nossos Barbeiros</h2>
+            <div class="barbeiros-container">
+                <div class="barbeiro">
+                    <img src="images/barbeiro1.webp" alt="Barbeiro 1">
+                    <p>Ben - Especialista em cortes modernos.</p>
+                </div>
+                <div class="barbeiro">
+                    <img src="images/barbeiro2.jpg" alt="Barbeiro 2">
+                    <p>Bob - Mestre em barbas.</p>
+                </div>
+                <div class="barbeiro">
+                    <img src="images/barbeiro3.jpg" alt="Barbeiro 3">
+                    <p>Billie - Profissinal em pintura capilar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="historico">
+            <h2>Histórico de Serviços</h2>
+            <ul>
+                <li>Corte de Cabelo - 20/12/2024</li>
+                <li>Barba - 15/10/2024</li>
+                <li>Corte + Barba - 01/01/2025</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
