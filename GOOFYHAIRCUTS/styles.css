@@ -3,11 +3,11 @@
 
 /* Estilos Gerais */
 body {
-    font-family: 'Ubuntu', sans-serif; /* Fonte Ubuntu */
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: aliceblue; /* Fundo mais claro e suave */
+    background-color: aliceblue;
     color: #333;
 }
 
@@ -18,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #1a1a1a; /* Preto escuro */
+    background-color: #1a1a1a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ body {
 
 /* Menu Hambúrguer */
 header {
-    background-color: #2c3e50; /* Azul escuro para o menu */
+    background-color: #2c3e50;
     padding: 10px;
     position: sticky;
     top: 0;
@@ -45,7 +45,7 @@ header {
 }
 
 .menu-icon {
-    color: #ecf0f1; /* Cinza claro para o ícone do menu */
+    color: #ecf0f1;
     font-size: 24px;
     cursor: pointer;
     display: none;
@@ -61,14 +61,14 @@ nav ul {
 }
 
 nav ul li a {
-    color: #ecf0f1; /* Cinza claro para os links */
+    color: #ecf0f1;
     text-decoration: none;
     padding: 10px;
     font-weight: 500;
 }
 
 nav ul li a:hover {
-    color: #048fcf; /* Dourado ao passar o mouse */
+    color: #048fcf;
 }
 
 /* Conteúdo Principal */
@@ -84,10 +84,9 @@ section {
 }
 
 h1, h2 {
-    color: #2c3e50; /* Azul escuro para títulos */
+    color: #2c3e50;
 }
 
-/* Agendamento */
 form {
     display: flex;
     flex-direction: column;
@@ -99,7 +98,7 @@ form {
 
 form label {
     font-weight: 500;
-    color: #2c3e50; /* Azul escuro */
+    color: #2c3e50;
 }
 
 form input, form select, form button {
@@ -111,15 +110,15 @@ form input, form select, form button {
 }
 
 form button {
-    background-color: #048fcf; /* Dourado */
-    color: #2c3e50; /* Azul escuro */
+    background-color: #048fcf; 
+    color: #2c3e50; 
     font-weight: 500;
     cursor: pointer;
     border: none;
 }
 
 form button:hover {
-    background-color: #048fcf; /* Dourado mais escuro */
+    background-color: #048fcf;
 }
 
 /* Galeria */
@@ -148,7 +147,7 @@ form button:hover {
 .barbeiro {
     flex: 1 1 200px;
     text-align: center;
-    background-color: #ffffff; /* Branco */
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -175,7 +174,7 @@ form button:hover {
 }
 
 #historico ul li {
-    background-color: #ffffff; /* Branco */
+    background-color: #ffffff;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -191,7 +190,7 @@ form button:hover {
     nav ul {
         flex-direction: column;
         display: none;
-        background-color: #2c3e50; /* Azul escuro para o menu mobile */
+        background-color: #2c3e50;
         padding: 10px;
     }
 
